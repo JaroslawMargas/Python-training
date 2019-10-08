@@ -21,6 +21,7 @@ delta = feature_date - now
 seconds_in_date = delta.total_seconds()
 
 days = divmod(seconds_in_date, 86400)
+# days = (days[0], days[1] = residue_sec)
 hours = divmod(days[1], 3600)
 minutes = divmod(hours[1], 60)
 seconds = divmod(minutes[1], 1)

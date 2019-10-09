@@ -8,4 +8,4 @@ for i in list_arg:
 
 # is the same as
     if i.endswith("jpg"):
-        print("yes engswith", i)
+        print("yes endswith", i)

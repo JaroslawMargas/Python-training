@@ -56,7 +56,7 @@ def validation(email) :
 
 
 if __name__ == '__main__' :
-    if validation("alias@domain") :
+    if validation("1alias@domain.pl") :
         print("ok")
     else :
         print("incorrect")

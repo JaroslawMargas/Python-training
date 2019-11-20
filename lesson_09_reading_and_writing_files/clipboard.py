@@ -41,4 +41,4 @@ if len(sys.argv) == 2 :
         pyperclip.copy(mbc_shelve[sys.argv[1]])
         # loads (copy to) keyword to clipboard
 
-
+mbc_shelve.close()

@@ -1,5 +1,5 @@
 # this module will be imported to "hello_world"
-
+from __future__ import print_function
 
 def function():
     print('Function executed')

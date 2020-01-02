@@ -2,8 +2,8 @@ import re
 import math
 
 # Write a program that greets the person by printing the word "Hi" and the name of the person. See the examples below.
-
-expected = re.compile(r'[a-zA-Z]')
+reg = r'[a-zA-Z]'
+expected = re.compile(reg)
 while True:
     input_name = input("Your Name?")
     # Python 3+ input instead
@@ -97,8 +97,8 @@ print("You need a " + str(math.ceil(int(km) / int(km_per_day))) + " days for thi
 
 N = input("Number of minutes ?")
 hour = int(N) // 60
-min = int(N) % 60
-print(str(hour) + ":" + str(min))
+min_val = int(N) % 60
+print(str(hour) + ":" + str(min_val))
 
 # Total cost
 # A cupcake costs A dollars and B cents. Determine, how many dollars and cents should one pay for N cupcakes.

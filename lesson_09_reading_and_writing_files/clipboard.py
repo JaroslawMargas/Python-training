@@ -9,7 +9,10 @@
 # arg[1] save,delete, <key>
 # arg[2] <key>
 
-import shelve, pyperclip, sys
+import pyperclip
+import shelve
+import sys
+
 # Shelve is a powerful Python module for object persistence. When you shelve an object, you must assign a KEY by
 # which the object value is known. In this way, the shelve file becomes a DATABASE  of STORED values, any of which can
 # be accessed at any time.
@@ -21,16 +24,16 @@ mbc_shelve = shelve.open('mbc')
 # sys.argv  - commandline arguments
 # sys.argv.lower()  makes lowercase SaVe -> save
 
-if len(sys.argv) == 3 :
+if len(sys.argv) == 3:
     if sys.argv[1].lower() == 'save':
         mbc_shelve[sys.argv[2]] = pyperclip.paste()
         # paste content in clipboard and store in shelve
     if sys.argv[1].lower() == 'delete' and sys.argv[2] in mbc_shelve:
         # arg delete and arg exist in shelve
         del mbc_shelve[sys.argv[2]]
-if len(sys.argv) == 2 :
+if len(sys.argv) == 2:
     if sys.argv[1].lower() == 'delete':
-        for key in mbc_shelve :
+        for key in mbc_shelve:
             del mbc_shelve[key]
         # get a key by iteration and del all with key
     if sys.argv[1].lower() == 'list':

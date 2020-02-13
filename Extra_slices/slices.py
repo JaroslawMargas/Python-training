@@ -8,9 +8,6 @@ first_fine = nums[:4]
 print(first_fine)
 # [1, 2, 3, 4]
 
-rev = nums[::-1]
-
-
 rev_3_val = nums[-3:]
 print(rev_3_val)
 # [7, 8, 9]

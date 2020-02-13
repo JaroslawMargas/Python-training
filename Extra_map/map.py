@@ -11,3 +11,4 @@ def calculate_sq(n):
 numbers = (2, 3, 4, 5)
 result = map(calculate_sq, numbers)
 print(list(result))
+

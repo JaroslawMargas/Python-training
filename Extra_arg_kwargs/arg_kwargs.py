@@ -6,6 +6,9 @@ def my_func(form_arg, *args, **kwargs):
 
     for key in kwargs:
         print("another keyword arg: %s: %s" % (key, kwargs[key]))
+# or
+    for key, value in kwargs.items():
+        print("another keyword arg: %s: %s" % (key, value))
 
 
 my_func(1, "one", "two ", myarg2="tree", myarg3=4)

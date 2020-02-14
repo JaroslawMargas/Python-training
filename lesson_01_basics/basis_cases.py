@@ -7,7 +7,7 @@ expected = re.compile(reg)
 while True:
     input_name = input("Your Name?")
     # Python 3+ input instead
-    if expected.match(input_name):
+    if expected.search(input_name):
         print('Hi ' + input_name)
         break
 

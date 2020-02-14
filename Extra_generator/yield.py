@@ -3,8 +3,8 @@ def gen_func():
         yield itm
 
 
-lt = gen_func()
-print(list(lt))
+lt = list(gen_func())
+print(lt)
 
 
 # ['a', 'b', 'c']
@@ -13,7 +13,7 @@ print(list(lt))
 # leave it.
 
 def next_square():
-    i = 1;
+    i = 1
 
     while True:
         yield i * i

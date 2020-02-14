@@ -9,7 +9,7 @@ alphabets = ['a', 'b', 'd', 'e', 'i', 'j', 'o']
 
 
 def filter_vowels(alphabet):
-    vowels = ['a', 'e', 'i', 'o', 'u']
+    vowels = ['a', 'r', 'i', 'o', 'u']
 
     if alphabet in vowels:
         return True

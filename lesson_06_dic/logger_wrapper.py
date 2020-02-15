@@ -7,4 +7,4 @@ def test_var_args(f_arg, *argv, **kwargs) :
         print("{0} = {1}".format(key, value))
 
 
-test_var_args('yasoob', 'python', 'eggs', 'test', name="Jan", surname="Nowak")
+test_var_args('yasoob', 'python', 'eggs', 'test_fun', name="Jan", surname="Nowak")

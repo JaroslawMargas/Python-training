@@ -12,7 +12,7 @@ while True:
         break
 
 
-# Write a program that takes three numbers and prints their sum. Every number is given on a separate line.
+# Write a program that takes three numbers and prints their sum_val. Every number is given on a separate line.
 
 def error_value_print():
     print('that is not a proper value')

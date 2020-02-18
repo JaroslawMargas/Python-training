@@ -23,8 +23,10 @@ def load_data():
     # for reading also binary mode is important
     db_file = open('examplePickle', 'rb')
     db = pickle.load(db_file)
-    for keys in db:
-        print(keys, '=>', db[keys])
+    # for keys in db:
+    #     print(keys, '=>', db[keys])
+    for keys, value in db.items():
+        print(keys, '=>', value)
     db_file.close()
 
 

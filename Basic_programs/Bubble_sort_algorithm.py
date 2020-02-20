@@ -5,7 +5,7 @@ def bs(sort_value):  # a = name of list
         for y in range(b - x):
             if sort_value[y] > sort_value[y + 1]:
                 sort_value[y], sort_value[y + 1] = sort_value[y + 1], sort_value[y]
-                print(sort_value[y], sort_value[y + 1] )
+                print(sort_value[y], sort_value[y + 1])
     return sort_value
 
 

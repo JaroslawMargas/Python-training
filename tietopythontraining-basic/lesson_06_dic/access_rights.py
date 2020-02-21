@@ -25,16 +25,16 @@
 #         self[key] = value
 
 
-access_dict = {'execute' : 'X',
-               'read' : 'R',
-               'write' : 'W'}
+access_dict = {'execute': 'X',
+               'read': 'R',
+               'write': 'W'}
 
 
-def create_dict(elements) :
+def create_dict(elements):
     # dict_obj = CreateDictionary()
     dict_obj = dict()
 
-    for i in range(elements) :
+    for i in range(elements):
         file_name, *rights, = input("{}: ".format(i + 1)).split()
         # a, *b = input()
         # 1 , [2,3,4,5]
@@ -46,8 +46,8 @@ def create_dict(elements) :
     return dict_obj
 
 
-while True :
-    try :
+while True:
+    try:
         N = int(input("the number of files contained in the filesystem ?"))
         file_system = create_dict(N)
         M = int(input("number of files you want to check?"))
@@ -55,17 +55,17 @@ while True :
         # or
         # request_files = [''] *M
         break
-    except ValueError :
+    except ValueError:
         print("no correct value")
 
-for j in range(M) :
+for j in range(M):
     request_files.append(input("{}: ".format(j + 1)).split())
     # or while request_files = [''] *M
     # request_files[j] = input("{}: ".format(j + 1)).split()
 
-for k in range(M) :
+for k in range(M):
     symbol, filename = request_files[k]
-    if access_dict[symbol] in file_system[filename] :
+    if access_dict[symbol] in file_system[filename]:
         print("OK")
-    else :
+    else:
         print("Access denied!")
